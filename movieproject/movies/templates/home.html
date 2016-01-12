@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block main-content %} <!--Main content block start-->
+<h2>Movies</h2>
+<form id="criteria_form">
+	<p>	
+		<h4>Filters</h4>
+		{{form.language.label_tag}}{{form.language}}
+		{{form.genre.label_tag}}{{form.genre}}
+	</p>
+	<p>	
+		<h4>Sorting</h4>
+		{{form.sort_by.label_tag}}{{form.sort_by}}
+	</p>
+
+</form>  
+<table id="movie_table">
+	<thead>	
+		<tr>
+			<th>Title</th>
+			<th>Description</th>
+			<th>FeaturedImage</th>
+			<th>Language</th>
+			<th>Genre</th>
+			<th>MovieLength</th>
+			<th>ReleaseDate</th>
+		</tr>
+	</thead>	
+	<tbody>
+		
+	</tbody>
+
+	
+</table>
+<ul id="index">
+	
+</ul>
+{% endblock main-content %}<!--Main content block end-->

@@ -1,0 +1,16 @@
+.featured_img{
+	width: 100px;
+	height: 100px;
+}
+.active{
+	color: blue;
+}
+.pointer{
+	cursor: pointer;
+}
+#movie_table th, td{
+	text-align: center;
+}
+#index li{
+	display: inline;
+}

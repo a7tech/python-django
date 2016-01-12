@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% load staticfiles %}
+    <title>{% block title %}MovieTest{% endblock %}</title>
+
+    <!-- Custom styles  -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    
+  {% block head %}<!--head block start-->
+  {% endblock head %}<!--head block end-->
+  </head>
+  <body>
+
+    <div class="container">
+    {% block main-content %} <!--Main content block start-->
+      
+    {% endblock main-content %}<!--Main content block end-->
+    </div>
+
+    <!-- Jquery and main js -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    
+    {% block scripts %}<!--Extra scripts block start(Page specific)-->
+    {% endblock scripts %}<!--Extra scripts block start-->
+
+  </body>
+  
+</html>
